@@ -14,7 +14,7 @@ DRVision is an automated screening framework designed to classify the severity o
 To maintain high pipeline transparency, the raw data flows through a strict optimization process before reaching the classification head:
 
 <p align="center">
-  <img src="system_architecture.jpeg" alt="End-to-End System Architecture Diagram" width="100%">
+  <img src="system_architecture.png" alt="End-to-End System Architecture Diagram" width="100%">
 </p>
 
 ---
@@ -23,7 +23,7 @@ To maintain high pipeline transparency, the raw data flows through a strict opti
 The model achieves an overall classification accuracy of ~84% on the test split.
 
 <p align="center">
-  <img src="performance_metrics.jpeg" alt="Detailed Performance Metrics Dashboard" width="100%">
+  <img src="performance_metrics.png" alt="Detailed Performance Metrics Dashboard" width="100%">
 </p>
 
 *Note: The high QWK score of 0.87 indicates strong ordinal agreement with expert clinical grading labels.*
