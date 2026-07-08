@@ -19,3 +19,15 @@ The model achieves an overall classification accuracy of ~84% on the test split.
 | Quadratic Weighted Kappa (QWK) | 0.87 |
 
 *Note: The high QWK score of 0.87 indicates strong ordinal agreement with expert clinical grading labels.*
+
+## 🖼️ Visualizations & Model Interpretability
+
+### Preprocessing & Model Pipeline
+The framework processes raw retinal fundus images through an optimized pipeline involving black border cropping, uniform resizing to 512x512, and Contrast Limited Adaptive Histogram Equalization (CLAHE) to dramatically enhance the contrast of subtle microaneurysms and exudates before passing them to the fine-tuned EfficientNet-B3 network.
+
+### Clinical Explainability via Grad-CAM
+To establish clinical trust, DRVision integrates Gradient-weighted Class Activation Mapping (Grad-CAM). Instead of acting as a "black box," the framework outputs a localization heatmap highlighting the exact pathological regions (such as hemorrhages or lipid deposits) driving its severity prediction.
+
+| Original Retinal Fundus Image | AI Prediction Heatmap (Stage 2 - 94.3% Confidence) |
+| --- | --- |
+| ![Original Image](images/original_fundus.png) | ![Grad-CAM Heatmap](images/gradcam_heatmap.png) |
