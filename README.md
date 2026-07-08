@@ -40,4 +40,4 @@ To establish clinical trust, DRVision integrates Gradient-weighted Class Activat
 
 | Original Retinal Fundus Image | AI Prediction Heatmap (Stage 2 - 94.3% Confidence) |
 | --- | --- |
-| ![Original Image](images/original_fundus.jpng) | ![Grad-CAM Heatmap](images/gradcam_heatmap.png) |
+| ![Original Image](original_fundus.png) | ![Grad-CAM Heatmap](gradcam_heatmap.png) |
