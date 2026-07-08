@@ -1,0 +1,15 @@
+# Ignore heavy dataset files
+*.jpeg
+*.jpg
+*.png
+data/
+
+# Ignore deep learning checkpoints/weights
+*.pt
+*.pth
+
+# Ignore Python environment and cache artifacts
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+.DS_Store
