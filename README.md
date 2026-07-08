@@ -7,18 +7,28 @@ DRVision is an automated screening framework designed to classify the severity o
 * **Image Preprocessing:** Contrast Limited Adaptive Histogram Equalization (CLAHE), uniform resizing (512x512), and noise reduction.
 * **Explainable AI:** Integrated Grad-CAM visualization to highlight specific lesion regions (microaneurysms, hemorrhages, exudates) influencing model predictions.
 
+---
+
+## 🏗️ End-to-End System Architecture
+
+To maintain high pipeline transparency, the raw data flows through a strict optimization process before reaching the classification head:
+
+<p align="center">
+  <img src="YOUR_ARCHITECTURE_IMAGE_URL_OR_PATH" alt="End-to-End System Architecture Diagram" width="100%">
+</p>
+
+---
+
 ## 📊 Performance Results
 The model achieves an overall classification accuracy of ~84% on the test split.
 
-| Performance Metric | Evaluation Value |
-| --- | --- |
-| Accuracy | 0.84 |
-| Precision | 0.84 |
-| Recall | 0.86 |
-| F1-Score | 0.85 |
-| Quadratic Weighted Kappa (QWK) | 0.87 |
+<p align="center">
+  <img src="YOUR_PERFORMANCE_DASHBOARD_URL_OR_PATH" alt="Detailed Performance Metrics Dashboard" width="100%">
+</p>
 
 *Note: The high QWK score of 0.87 indicates strong ordinal agreement with expert clinical grading labels.*
+
+---
 
 ## 🖼️ Visualizations & Model Interpretability
 
